@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import {Poppins} from "next/font/google"
 import "./globals.css";
+import ResponsiveNavbar from "@/components/Navbar/ResponsiveNavbar";
 
 
 const font = Poppins({
@@ -23,7 +24,7 @@ export default function RootLayout({
       <body
         className={`${font.className} antialiased`}
       >
-        Nav
+        <ResponsiveNavbar/>
         {children}
         Footer
       </body>
